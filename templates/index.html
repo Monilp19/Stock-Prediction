@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!-- ─── Navbar ────────────────────────────────────────── -->
+<!-- ─── Navbar ───── -->
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <a href="#" class="nav-logo">
@@ -32,7 +32,7 @@
     </div>
 </nav>
 
-<!-- ─── Hero ──────────────────────────────────────────── -->
+<!-- ─── Hero─────── -->
 <section class="hero" id="hero">
     <div class="hero-bg-shapes">
         <div class="shape shape-1"></div>
@@ -65,7 +65,7 @@
     </div>
 </section>
 
-<!-- ─── Prediction Results ────────────────────────────── -->
+<!-- ─── Prediction Results────── -->
 <section class="results-section" id="results" style="display:none;">
     <div class="container">
 
@@ -146,7 +146,7 @@
     </div>
 </section>
 
-<!-- ─── About ─────────────────────────────────────────── -->
+<!-- ─── About ────── -->
 <section class="section" id="about">
     <div class="container">
         <h2 class="section-title"><span class="title-icon">📌</span> About the Project</h2>
@@ -167,7 +167,7 @@
     </div>
 </section>
 
-<!-- ─── Technology ────────────────────────────────────── -->
+<!-- ─── Technology───── -->
 <section class="section section-alt" id="technology">
     <div class="container">
         <h2 class="section-title"><span class="title-icon">🛠️</span> Technology Used</h2>
@@ -196,7 +196,7 @@
     </div>
 </section>
 
-<!-- ─── Workflow ───────────────────────────────────────── -->
+<!-- ─── Workflow ────── -->
 <section class="section" id="workflow">
     <div class="container">
         <h2 class="section-title"><span class="title-icon">🔄</span> How It Works</h2>
@@ -240,7 +240,7 @@
 </section>
 
 
-<!-- ─── Disclaimer ────────────────────────────────────── -->
+<!-- ─── Disclaimer ─────── -->
 <section class="disclaimer-section">
     <div class="container">
         <div class="disclaimer-card">
@@ -255,7 +255,7 @@
     </div>
 </section>
 
-<!-- ─── Footer ────────────────────────────────────────── -->
+<!-- ─── Footer ───── -->
 <footer class="footer">
     <div class="container footer-content">
         <p class="footer-logo">📈 StockPredict<span class="logo-accent">ML</span></p>
@@ -264,7 +264,7 @@
 </footer>
 
 <script>
-// ─── Navigation ──────────────────────────────────────────
+// ─── Navigation ──────
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 navToggle.addEventListener('click', () => {
@@ -285,13 +285,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// ─── Ticker helpers ──────────────────────────────────────
+// ─── Ticker helpers ──────
 function fillTicker(symbol) {
     document.getElementById('tickerInput').value = symbol;
     document.getElementById('tickerInput').focus();
 }
 
-// ─── Predict ─────────────────────────────────────────────
+// ─── Predict ───────
 async function predict() {
     const ticker = document.getElementById('tickerInput').value.trim().toUpperCase();
     const errorMsg = document.getElementById('errorMsg');
@@ -340,7 +340,7 @@ document.getElementById('tickerInput').addEventListener('keydown', e => {
     if (e.key === 'Enter') predict();
 });
 
-// ─── Render ──────────────────────────────────────────────
+// ─── Render ──────
 function renderResults(data) {
     // Ticker and dates
     document.getElementById('resTicker').textContent = data.ticker;
