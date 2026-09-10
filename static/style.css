@@ -3,7 +3,7 @@
    Clean, light, card-based design with Inter font
   */
 
-/* ─── Reset & Base ──────────────────────────────────── */
+/* ─── Reset & Base───── */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -60,7 +60,7 @@ img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
 
 
-/* ─── Navbar ────────────────────────────────────────── */
+/* ─── Navbar──── */
 .navbar {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -142,7 +142,7 @@ a { text-decoration: none; color: inherit; }
 .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
 
-/* ─── Hero ──────────────────────────────────────────── */
+/* ─── Hero─── */
 .hero {
     position: relative;
     min-height: 92vh;
@@ -354,7 +354,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 
-/* ─── Shared ────────────────────────────────────────── */
+/* ─── Shared────── */
 .section {
     padding: 80px 0;
 }
@@ -522,7 +522,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 
-/* ─── Charts ────────────────────────────────────────── */
+/* ─── Charts ───── */
 .charts-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
